@@ -10,7 +10,7 @@ function Nav() {
             </Link>
             <ul className="nav-links">
                 <Link to="/">
-                    <FontAwesomeIcon icon={ ["fal", "coffee"] } />
+                    <FontAwesomeIcon icon={ ["fas", "bars"] } />
                 </Link>
                 <Link to="/about"><li>About</li></Link>
                 <Link to="/works"><li>Works</li></Link>
