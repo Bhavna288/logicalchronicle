@@ -53,9 +53,8 @@ nav {
 }
 
 .nav-links {
-  width: 40%;
   display: flex;
-  margin-block-start: 1em;
+  margin-left: auto!important;
   justify-content: space-between;
   list-style: none;
 }
@@ -91,6 +90,13 @@ nav {
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  .name { position: absolute; top: 20%;}
+  .changeTxt {
+  position: absolute;
+  top: 70%;}
+}
+
 .logoTxt {
   color: black;
   background-color: white;
@@ -99,6 +105,7 @@ nav {
   height: 40px;
   box-shadow: 0px 0px 15px red;
   text-decoration: none;
+  margin: auto;
 }
 
 .logoTxt p {
