@@ -1,8 +1,24 @@
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import './App.css';
 import myPic from './mypic.jpg';
+import Service from './Services';
 
 function About() {
+
+    const servicesArr = [
+        {
+            title: "Web Development",
+            description: "Fully responsive websites.",
+            icon: "fas fa-bars"
+        }, {
+            title: "Android Development",
+            description: "Android development in Java and Kotlin.",
+            icon: "fas fa-times"
+        }
+    ];
+
     return (
         <div className="page">
             <div className="rotate-text">About Me</div>
@@ -33,14 +49,21 @@ function About() {
                             </div>
                             <div className="rows">
                                 <div className="tds">
-                                    Age: <span className="ansDet">19</span>
+                                    <button className="cvBtn"><FontAwesomeIcon icon={ faDownload } />&ensp; Download My CV</button>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div >
-            </div >
-        </div >
+                </div>
+                <div className="services">
+                    {
+                        servicesArr.map((service, index) =>
+                            <Service key={ index } { ...servicesArr[index] } />
+                        )
+                    }
+                </div>
+            </div>
+        </div>
     );
 }
 
