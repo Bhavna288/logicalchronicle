@@ -91,7 +91,7 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-  .name { position: absolute; top: 20%;}
+  .name { position: absolute; top: 20%; font-size: 60px;}
   .changeTxt {
   position: absolute;
   top: 70%;}
@@ -105,7 +105,8 @@ nav {
   height: 40px;
   box-shadow: 0px 0px 15px red;
   text-decoration: none;
-  margin: auto;
+  position: absolute;
+  left: 35px;
 }
 
 .logoTxt p {
