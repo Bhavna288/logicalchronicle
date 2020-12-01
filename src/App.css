@@ -184,7 +184,7 @@ nav {
   }
 }
 
-.container {
+.containerLocal {
   padding-top: 50px;
 }
 
@@ -235,16 +235,41 @@ nav {
 
 .details {
   border-top: 1px solid #999999;
-  padding-top: 30px;
+  padding-top: 20px;
   text-align: left;
-}
-
-.details td {
-  padding-top: 15px;
-  padding-right: 30px;
 }
 
 .ansDet {
   padding-left: 10px;
   color: #BBBBBB;
+}
+
+.rows {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.tds {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  padding-bottom: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .tds {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .tds {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
