@@ -53,3 +53,7 @@ window.onload = function () {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
 };
+
+window.onpopstate = function (event) {
+    console.log("location: " + document.location + ", state: " + JSON.stringify(event.state));
+};

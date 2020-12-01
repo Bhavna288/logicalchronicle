@@ -3,7 +3,7 @@ import './App.css';
 
 function Certificate() {
     return (
-        <div>
+        <div className="page">
             <h1>Certificate Page</h1>
         </div>
     );

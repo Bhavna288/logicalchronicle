@@ -4,7 +4,7 @@ import ProjectsArr from './ProjectsArr';
 
 function Project() {
     return (
-        <div>
+        <div className="page">
             <h1>Project Page</h1>
             <ProjectsArr />
         </div>
