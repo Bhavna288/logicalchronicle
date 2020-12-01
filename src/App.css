@@ -184,6 +184,10 @@ nav {
   }
 }
 
+.container {
+  padding-top: 50px;
+}
+
 .myPic {
   width: 300px;
   height: auto;
@@ -194,12 +198,13 @@ nav {
 
 .content {
   color: white;
-  padding: 50px 50px 50px 500px;
+  padding: 0px 50px 50px 500px;
 }
 
 .intro {
   text-align: justify;
   font-size: 18px;
+  color: #BBBBBB;
 }
 
 .headline {
@@ -211,11 +216,35 @@ nav {
 
 @media screen and (max-width: 1000px) {
   .myPic {
+    float: unset;
     border-radius: 50%;
+    align-content: center;
+    padding-left: 0;
   }
   .content {
-    left: 150px;
-    right: 150px;
-    padding: 20px
+    padding: 80px;
+    padding-left: 180px;
   }
+}
+
+@media screen and (max-width: 650px) {
+  .content {
+    padding: 30px;
+  }
+}
+
+.details {
+  border-top: 1px solid #999999;
+  padding-top: 30px;
+  text-align: left;
+}
+
+.details td {
+  padding-top: 15px;
+  padding-right: 30px;
+}
+
+.ansDet {
+  padding-left: 10px;
+  color: #BBBBBB;
 }
