@@ -1,11 +1,16 @@
+.html {
+  height: 100%;
+}
+
 .App {
   text-align: center;
   background-image: url('./background.jpg');
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
+  font-family: Candara;
 }
 
 .App-logo {
@@ -54,7 +59,7 @@ nav {
 
 .nav-links {
   display: flex;
-  margin-left: auto!important;
+  margin-left: auto;
   justify-content: space-between;
   list-style: none;
 }
@@ -63,7 +68,7 @@ nav {
   margin-right: 32px;
 }
 
-.nav-links a{
+.nav-links a {
   color: white;
   text-decoration: none;
 }
@@ -79,8 +84,23 @@ nav {
   position: absolute;
   top: 30%;
   font-size: 80px;
-  font-family: Candara;
   font-weight: bold;
+}
+
+#barsBtn {
+  display: none;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 35px;
+  top: 35px;
+  font-size: 30px;
+}
+
+#barsBtn:hover {
+  border: none;
 }
 
 .changeTxt {
@@ -91,10 +111,33 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-  .name { position: absolute; top: 20%; font-size: 60px;}
+  .name { position: absolute; top: 30%; font-size: 60px;}
   .changeTxt {
   position: absolute;
   top: 70%;}
+  .nav-links a {display: none;}
+    #barsBtn {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .nav-links.responsive {
+    position: relative;
+    display: block;
+    justify-content: unset;
+    margin-left: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  #barsBtn{
+    margin-left: auto!important;
+  }
+  .nav-links.responsive a {
+    display: block;
+    margin-bottom: 15px;
+  }
 }
 
 .logoTxt {
@@ -107,6 +150,7 @@ nav {
   text-decoration: none;
   position: absolute;
   left: 35px;
+  top: 35px;
 }
 
 .logoTxt p {
@@ -114,4 +158,64 @@ nav {
   bottom: 15px;
   font-weight: bolder;
   font-size: 20px;
+}
+
+.rotate-text {
+  color: white;
+  height: calc(100% - 101px);
+  position: fixed;
+  width: auto;
+  writing-mode: vertical-rl;
+  transform: rotate(180.0deg);
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  padding-right: 32px;
+}
+
+@media screen and (max-width: 650px) {
+  .rotate-text {
+    writing-mode: horizontal-tb;
+    transform: rotate(0.0deg);
+    /* border-bottom: 1px solid white; */
+    text-align: center;
+    padding: 4px;
+    position: unset;
+  }
+}
+
+.myPic {
+  width: 300px;
+  height: auto;
+  padding-left: 150px;
+  vertical-align: middle;
+  float: left;
+}
+
+.content {
+  color: white;
+  padding: 50px 50px 50px 500px;
+}
+
+.intro {
+  text-align: justify;
+  font-size: 18px;
+}
+
+.headline {
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .myPic {
+    border-radius: 50%;
+  }
+  .content {
+    left: 150px;
+    right: 150px;
+    padding: 20px
+  }
 }

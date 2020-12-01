@@ -3,6 +3,7 @@ import './App.css';
 import "./pageTransitions/slideTransition.scss";
 import Nav from './Nav';
 import Works from './Works';
+import About from './About';
 import Certificate from './Certificate';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import SlideRoutes from 'react-slide-routes';
@@ -17,6 +18,7 @@ function App() {
       <Switch>
         <SlideRoutes location={ location }>
           <Route path="/" exact component={ Home } />
+          <Route path="/about" exact component={ About } />
           <Route path="/works" component={ Works } />
           <Route path="/certificates" component={ Certificate } />
         </SlideRoutes>
