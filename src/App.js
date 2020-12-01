@@ -6,6 +6,7 @@ import Works from './Works';
 import Certificate from './Certificate';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import SlideRoutes from 'react-slide-routes';
+import ReactJsTyping from 'reactjs-typing-effect';
 
 function App() {
 
@@ -24,17 +25,18 @@ function App() {
   )
 }
 
-const Home = () => (
-  <div className="page">
-    <div className="main">
-      <p className="name">Bhavna Tahelyani</p>
-      <h1 className="changeTxt">I'm a <span
-        className="txt-rotate"
-        data-period="1000"
-        data-rotate='["Developer ", "Freelancer ", "Designer "]'></span>
-      </h1>
+function Home() {
+  const listOfString = [" Developer ", " Freelancer ", " Designer "];
+  return (
+    <div className="page">
+      <div className="main">
+        <p className="name">Bhavna Tahelyani</p>
+        <h1 className="changeTxt">I'm a
+          <ReactJsTyping StringList={ listOfString } speed={ 20 } />
+        </h1>
+      </div>
     </div>
-  </div>
-);
+  );
+}
 
 export default App;

@@ -16,6 +16,7 @@
     "react-scripts": "4.0.1",
     "react-slide-routes": "^0.14.0",
     "react-transition-group": "^4.4.1",
+    "reactjs-typing-effect": "^1.0.8",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
