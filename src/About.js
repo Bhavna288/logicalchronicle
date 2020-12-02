@@ -1,3 +1,4 @@
+import { faAndroid, faDev } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
@@ -11,11 +12,15 @@ function About() {
         {
             title: "Web Development",
             description: "Fully responsive websites.",
-            icon: "fas fa-bars"
+            icon: faDev
         }, {
             title: "Android Development",
             description: "Android development in Java and Kotlin.",
-            icon: "fas fa-times"
+            icon: faAndroid
+        }, {
+            title: "Android Development",
+            description: "Android development in Java and Kotlin.",
+            icon: faAndroid
         }
     ];
 
@@ -23,7 +28,7 @@ function About() {
         <div className="page">
             <div className="rotate-text">About Me</div>
             <div className="containerLocal">
-                <img src={ myPic } className="myPic" />
+                <img src={ myPic } className="myPic" alt="Bhavna Tahelyani" />
                 <div className="content">
                     <p className="headline">I'm Bhavna Tahelyani, a Full Stack Developer</p>
                     <p className="intro">
@@ -56,11 +61,14 @@ function About() {
                     </div>
                 </div>
                 <div className="services">
-                    {
-                        servicesArr.map((service, index) =>
-                            <Service key={ index } { ...servicesArr[index] } />
-                        )
-                    }
+                    <p className="headline">Services</p>
+                    <div className="rows">
+                        {
+                            servicesArr.map((service, index) =>
+                                <Service key={ index } { ...servicesArr[index] } />
+                            )
+                        }
+                    </div>
                 </div>
             </div>
         </div>
