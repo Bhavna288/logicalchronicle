@@ -28,6 +28,7 @@ function Nav() {
             <ul className="nav-links" id="topNav">
                 <Link to="/"><li>Home</li></Link>
                 <Link to="/about"><li>About</li></Link>
+                <Link to="/resume"><li>Resume</li></Link>
                 <Link to="/works"><li>Works</li></Link>
                 <Link to="/certificates"><li>Skills</li></Link>
             </ul>
