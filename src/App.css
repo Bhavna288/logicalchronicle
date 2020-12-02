@@ -291,7 +291,7 @@ nav {
   color: #BBBBBB;
 }
 
-rks.tds, .singleService, .tds-md-12, .tds-lg-4, .tds-md-6, .tds-sm-12 {
+.tds, .singleService, .tds-md-12, .tds-lg-4, .tds-md-6, .tds-sm-12 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -305,6 +305,8 @@ rks.tds, .singleService, .tds-md-12, .tds-lg-4, .tds-md-6, .tds-sm-12 {
   .tds-lg-4 {
     flex: 0 0 33.3333%;
     max-width: 33.3333%;
+    padding-left: 0;
+    padding-right: 30px;
   }
 }
 
@@ -689,4 +691,70 @@ rks.tds, .singleService, .tds-md-12, .tds-lg-4, .tds-md-6, .tds-sm-12 {
 
 .changeColor > .react-sweet-progress-symbol {
   color: white;
+}
+
+.project {
+  background-color: #292821;
+  padding: 0;
+}
+
+.project-title {
+  padding: 20px 20px 10px 20px;
+  text-align: left;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.project-des {
+  padding: 0px 20px 10px 20px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.project-img {
+  max-width:100%;
+}
+
+.prImg {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.project .view-work {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 6px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.prImg:hover .overly {
+  opacity: 1;
+}
+
+.prImg:hover .project-img {
+  opacity: 0.5;
+  transition: all 0.7s ease-in-out;
+  transform: scale(1.2);
+}
+
+.overly {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+  box-sizing: border-box;
 }

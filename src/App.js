@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import "./pageTransitions/slideTransition.scss";
 import Nav from './Nav';
 import Works from './Works';
 import About from './About';
@@ -10,7 +9,7 @@ import SlideRoutes from 'react-slide-routes';
 import ReactJsTyping from 'reactjs-typing-effect';
 import Resume from './Resume';
 
-function App() {
+const App = () => {
 
   const location = useLocation();
   return (
@@ -19,8 +18,8 @@ function App() {
       <Switch>
         <SlideRoutes location={ location }>
           <Route path="/" exact component={ Home } />
-          <Route path="/about" exact component={ About } />
-          <Route path="/resume" exact component={ Resume } />
+          <Route path="/about" component={ About } />
+          <Route path="/resume" component={ Resume } />
           <Route path="/works" component={ Works } />
           <Route path="/certificates" component={ Certificate } />
         </SlideRoutes>

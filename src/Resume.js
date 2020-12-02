@@ -1,4 +1,4 @@
-import { React, Component, useState } from 'react';
+import { React } from 'react';
 import ResumeItem from './ResumeItem';
 import Skill from './Skill';
 

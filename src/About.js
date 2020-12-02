@@ -1,8 +1,7 @@
 import { faAndroid, faDev } from '@fortawesome/free-brands-svg-icons';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
-import './App.css';
+import { React } from 'react';
 import myPic from './mypic.jpg';
 import Service from './Services';
 
