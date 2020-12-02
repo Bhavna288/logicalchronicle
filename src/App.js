@@ -3,7 +3,7 @@ import './App.css';
 import Nav from './Nav';
 import Works from './Works';
 import About from './About';
-import Certificate from './Certificate';
+import Contact from './Contact';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import SlideRoutes from 'react-slide-routes';
 import ReactJsTyping from 'reactjs-typing-effect';
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/about" component={ About } />
           <Route path="/resume" component={ Resume } />
           <Route path="/works" component={ Works } />
-          <Route path="/certificates" component={ Certificate } />
+          <Route path="/contact" component={ Contact } />
         </SlideRoutes>
       </Switch>
     </div >

@@ -1,4 +1,4 @@
-import { React, Component, useState } from 'react';
+import { React, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -30,7 +30,7 @@ function Nav() {
                 <Link to="/about"><li>About</li></Link>
                 <Link to="/resume"><li>Resume</li></Link>
                 <Link to="/works"><li>Works</li></Link>
-                <Link to="/certificates"><li>Skills</li></Link>
+                <Link to="/contact"><li>Contact</li></Link>
             </ul>
         </nav >
     );

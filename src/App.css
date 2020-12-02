@@ -1,15 +1,18 @@
-o.html {
+.html {
   height: 100%;
 }
-
+*, ::after, ::before {
+    box-sizing: border-box;
+}
 .App {
   text-align: center;
-  background-image: url('./background.jpg');
+  /* background-image: url('./background.jpg'); */
   width: 100%;
+  background-color: #111111;
   min-height: 100vh;
-  background-attachment: fixed;
+  /* background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
   font-family: Candara;
 }
 
@@ -217,6 +220,7 @@ nav {
 .services, .skills {
   padding-left: 150px;
   padding-right: 80px;
+  box-sizing: border-box;
 }
 
 @media screen and (max-width: 1000px) {
@@ -235,6 +239,12 @@ nav {
 @media screen and (max-width: 650px) {
   .content {
     padding: 30px;
+  }
+  .skills, .services {
+    padding: 30px;
+  }
+  .singleService {
+    margin-right: 30px;
   }
 }
 
@@ -276,7 +286,7 @@ nav {
 .service-icon {
   font-size: 35px;
   color: rgb(226, 102, 154);
-  padding: 15px;
+  margin: 15px;
 }
 
 .service-title {
@@ -296,7 +306,6 @@ nav {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
-  box-sizing: border-box;
   padding-bottom: 15px;
   color: white;
 }
@@ -358,6 +367,7 @@ nav {
   font-size: 25px;
   margin-top: 30px;
   font-weight: bold;
+  display: block;
 }
 
 @media screen and (max-width: 650px) {
@@ -713,6 +723,7 @@ nav {
 
 .project-img {
   max-width:100%;
+  transition: 0.7s ease-in-out;
 }
 
 .prImg {
@@ -735,8 +746,7 @@ nav {
 }
 
 .prImg:hover .project-img {
-  opacity: 0.5;
-  transition: all 0.7s ease-in-out;
+  opacity: 0.4;
   transform: scale(1.2);
 }
 
@@ -757,4 +767,76 @@ nav {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
   box-sizing: border-box;
+}
+
+.contact-form {
+  padding-right: 30px;
+  box-sizing: border-box;
+}
+
+.contact-form > .inp-con {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.contact-form > .inp-con input, textarea {
+  background-color: #161616;
+  border: none;
+  margin: 15px 0px 15px 0px;
+  padding: 12px;
+  font-family: Candara;
+  font-size: 17px;
+  min-width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  color: #CCC;
+}
+
+.contact-list {
+  list-style: none;
+  text-align: left;
+  padding-left: 0;
+}
+
+.contact-list li {
+  display: flex;
+}
+
+.contact-list .cl-icon {
+  text-align: center;
+  padding: 20px;
+  padding-left: 0;
+  font-size: 30px;
+  box-sizing: border-box;
+  color: rgb(226, 102, 154);
+}
+
+.con-p {
+  color: #ccc;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.contact-list .cl-details {
+  padding: 20px;
+  margin-left: 5px;
+  border-left: 2px solid #aaa;
+  color: #ccc;
+}
+
+.contact-list .cl-details .cl-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+
+@media all and (max-width: 650px) {
+  .con-p, .contact-list {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contact-form {
+    margin-left: 40px;
+    /* margin-right: 10px; */
+  }
 }
