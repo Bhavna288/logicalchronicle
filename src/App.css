@@ -1,4 +1,4 @@
-.html {
+o.html {
   height: 100%;
 }
 
@@ -291,7 +291,7 @@ nav {
   color: #BBBBBB;
 }
 
-.tds, .singleService, .tds-md-12 {
+rks.tds, .singleService, .tds-md-12, .tds-lg-4, .tds-md-6, .tds-sm-12 {
   position: relative;
   width: 100%;
   padding-right: 15px;
@@ -299,6 +299,13 @@ nav {
   box-sizing: border-box;
   padding-bottom: 15px;
   color: white;
+}
+
+@media screen and (min-width: 992px) {
+  .tds-lg-4 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+  }
 }
 
 .pl-150 {
@@ -324,10 +331,14 @@ nav {
     flex: 0 0 100%;
     max-width: 100%;
   }
+  .tds-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 650px) {
-  .tds {
+  .tds, .tds-sm-12 {
     flex: 0 0 100%;
     max-width: 100%;
   }
@@ -674,4 +685,8 @@ nav {
 
 .skill-p {
   text-align: left;
+}
+
+.changeColor > .react-sweet-progress-symbol {
+  color: white;
 }

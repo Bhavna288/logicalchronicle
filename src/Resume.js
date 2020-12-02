@@ -84,7 +84,7 @@ function Resume() {
                 <div className="rows">
                     { skillsArr.map((skill, index) => {
                         return (
-                            <div className="tds" key={ index }>
+                            <div className="tds-md-12" key={ index }>
                                 <Skill { ...skill } />
                             </div>
                         )
