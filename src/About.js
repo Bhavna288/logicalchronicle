@@ -27,7 +27,9 @@ function About() {
         <div className="page">
             <div className="rotate-text">About Me</div>
             <div className="containerLocal">
-                <img src={ myPic } className="myPic" alt="Bhavna Tahelyani" />
+                <div className="myPicDiv">
+                    <img src={ myPic } className="myPic" alt="Bhavna Tahelyani" />
+                </div>
                 <div className="content">
                     <p className="headline">I'm Bhavna Tahelyani, a Full Stack Developer</p>
                     <p className="intro">

@@ -191,12 +191,15 @@ nav {
   padding-top: 50px;
 }
 
-.myPic {
-  width: 300px;
-  height: auto;
+.myPicDiv {
   padding-left: 150px;
   vertical-align: middle;
   float: left;
+}
+
+.myPic {
+  width: 300px;
+  height: auto;
 }
 
 .content {
@@ -224,11 +227,13 @@ nav {
 }
 
 @media screen and (max-width: 1000px) {
-  .myPic {
+  .myPicDiv {
     float: unset;
-    border-radius: 50%;
     align-content: center;
     padding-left: 0;
+  }
+  .myPic {
+    border-radius: 50%;
   }
   .content, .services, .skills {
     padding: 80px;
@@ -269,9 +274,7 @@ nav {
 .singleService {
   background-color: #292821;
   /* box-shadow: 0px 0px 5px #999999; */
-  margin-left: 20px;
-  margin-right: 10px;
-  margin-bottom: 30px;
+  margin: 0px auto 30px;
   padding: 20px;
   text-align: left;
 }
@@ -355,10 +358,24 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 786px) {
+  .singleService {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media screen and (min-width: 992px) {
   .singleService {
     flex: 0 0 30%;
     max-width: 30%;
+  }
+}
+
+@media screen and (min-width: 786px) and (max-width: 992px) {
+  .singleService {
+    flex: 0 0 45%;
+    max-width: 45%;
   }
 }
 
@@ -371,10 +388,6 @@ nav {
 }
 
 @media screen and (max-width: 650px) {
-  .singleService {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
   .res-title {
     padding-left: 1.5em;
   }
@@ -486,7 +499,7 @@ nav {
 .timeline-list:before {
   content: "";
   border-left: 5px solid #CCC;
-  left: 2.18em;
+  left: 1.85em;
   top: 2em;
   height: 100%;
   position: absolute;
