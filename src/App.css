@@ -311,6 +311,7 @@ nav {
   padding-left: 15px;
   padding-bottom: 15px;
   color: white;
+  flex: 1;
 }
 
 @media screen and (min-width: 992px) {
@@ -333,7 +334,7 @@ nav {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 786px) {
   .tds, .tds-md-12 {
     flex: 0 0 50%;
     max-width: 50%;
@@ -400,6 +401,7 @@ nav {
   padding: 12px;
   cursor: pointer;
   border-radius: 6px;
+  margin: auto;
   margin-top: 10px;
   font-size: 16px;
 }
@@ -735,8 +737,9 @@ nav {
 }
 
 .project-img {
-  max-width:100%;
   transition: 0.7s ease-in-out;
+  min-height: 100%;
+  max-width: 100%;
 }
 
 .prImg {
@@ -795,7 +798,7 @@ nav {
 .contact-form > .inp-con input, textarea {
   background-color: #161616;
   border: none;
-  margin: 15px 0px 15px 0px;
+  margin: 17px auto;
   padding: 12px;
   font-family: Candara;
   font-size: 17px;
@@ -852,4 +855,8 @@ nav {
     margin-left: 40px;
     /* margin-right: 10px; */
   }
+}
+
+.contact-list li {
+  margin: auto;
 }

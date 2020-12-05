@@ -1,13 +1,15 @@
 import React from 'react';
 import Project from './Project';
 import printOnline from './printonline.jpg';
+import foodlauncher from './foodlauncher.png';
 
 const Works = () => {
     var projects = [
         {
             "id": 1,
             "title": "FoodLauncher",
-            "description": "Restaurant and food finder app"
+            "description": "Restaurant and food finder app",
+            "img": foodlauncher
         }, {
             "id": 2,
             "title": "PrintOnline",
@@ -26,7 +28,7 @@ const Works = () => {
             <div className="rows pl-150" style={ { marginLeft: 0, marginRight: 0 } }>
                 { projects.map((project, index) => {
                     return (
-                        <div className="tds-lg-4 tds-md-6 tds-sm-12">
+                        <div className="tds-lg-4 tds-md-6 tds-sm-12" key={ index }>
                             <Project { ...project } />
                         </div>
                     )

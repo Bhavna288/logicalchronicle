@@ -24,8 +24,10 @@ function Contact() {
                             <div className="inp-con">
                                 <textarea name="name" required placeholder="Message" />
                             </div>
+                            <div className="inp-con">
+                                <button className="cvBtn"><FontAwesomeIcon icon={ faPaperPlane } />&ensp; Send Message</button>
+                            </div>
                         </form>
-                        <button className="cvBtn"><FontAwesomeIcon icon={ faPaperPlane } />&ensp; Send Message</button>
                     </div>
                     <div className="tds">
                         <div className="res-title">Contact Info</div>
