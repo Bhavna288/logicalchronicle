@@ -738,14 +738,16 @@ nav {
 
 .project-img {
   transition: 0.7s ease-in-out;
-  min-height: 100%;
   max-width: 100%;
+  min-height: 280px;
+  max-height: 280px;
 }
 
 .prImg {
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
+  flex-wrap: wrap;
 }
 
 .project .view-work {

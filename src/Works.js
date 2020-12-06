@@ -8,7 +8,7 @@ const Works = () => {
         {
             "id": 1,
             "title": "FoodLauncher",
-            "description": "Restaurant and food finder app",
+            "description": "Restaurant and food finder app, food finder application.",
             "img": foodlauncher
         }, {
             "id": 2,
