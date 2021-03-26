@@ -54,10 +54,15 @@
 nav {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   min-height: 10vh;
   color: white;
   padding-top: 30px;
+  position: fixed;
+}
+
+.homepage, .aboutpage, .resumepage {
+  min-height: 90vh;
+  margin-top: 10vh;
 }
 
 .nav-links {
@@ -78,6 +83,14 @@ nav {
 
 .main {
   color: white;
+}
+
+.page {
+  display: block;
+}
+
+.aboutpage {
+  display: inline-block;
 }
 
 .name {

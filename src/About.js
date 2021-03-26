@@ -24,7 +24,7 @@ function About() {
     ];
 
     return (
-        <div className="page">
+        <div className="page2">
             <div className="rotate-text">About Me</div>
             <div className="containerLocal">
                 <div className="myPicDiv">

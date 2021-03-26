@@ -8,13 +8,13 @@ import { Switch, Route, useLocation } from 'react-router-dom';
 import SlideRoutes from 'react-slide-routes';
 import ReactJsTyping from 'reactjs-typing-effect';
 import Resume from './Resume';
+import Home from './Home'
 
 const App = () => {
 
   const location = useLocation();
   return (
     <div className="App">
-      <Nav />
       <Switch>
         <SlideRoutes location={ location }>
           <Route path="/" exact component={ Home } />
@@ -28,18 +28,18 @@ const App = () => {
   )
 }
 
-function Home() {
-  const listOfString = [" Developer ", " Freelancer ", " Designer "];
-  return (
-    <div className="page">
-      <div className="main">
-        <p className="name">Bhavna Tahelyani</p>
-        <h1 className="changeTxt">I'm a
-          <ReactJsTyping StringList={ listOfString } speed={ 20 } />
-        </h1>
-      </div>
-    </div>
-  );
-}
+// function Home() {
+//   const listOfString = [" Developer ", " Freelancer ", " Designer "];
+//   return (
+//     <div className="page">
+//       <div className="main">
+//         <p className="name">Bhavna Tahelyani</p>
+//         <h1 className="changeTxt">I'm a
+//           <ReactJsTyping StringList={ listOfString } speed={ 20 } />
+//         </h1>
+//       </div>
+//     </div>
+//   );
+// }
 
 export default App;
