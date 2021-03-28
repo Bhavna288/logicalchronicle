@@ -17,29 +17,30 @@ function Nav() {
         }
     }
 
-    let listener = null
-    const [scrollState, setScrollState] = useState("top")
+    // let listener = null
+    // const [scrollState, setScrollState] = useState("top")
 
-    useEffect(() => {
-        listener = document.addEventListener("scroll", e => {
-            var scrolled = document.scrollingElement.scrollTop
-            if (scrolled >= 600) {
-                if (scrollState !== "no-top") {
-                    setScrollState("no-top")
-                }
-            } else {
-                if (scrollState !== "top") {
-                    setScrollState("top")
-                }
-            }
-        })
-        return () => {
-            document.removeEventListener("scroll", listener)
-        }
-    }, [scrollState]);
+    // useEffect(() => {
+    //     listener = document.addEventListener("scroll", e => {
+    //         var scrolled = document.scrollingElement.scrollTop
+    //         if (scrolled >= 600) {
+    //             if (scrollState !== "no-top") {
+    //                 setScrollState("no-top")
+    //             }
+    //         } else {
+    //             if (scrollState !== "top") {
+    //                 setScrollState("top")
+    //             }
+    //         }
+    //     })
+    //     return () => {
+    //         document.removeEventListener("scroll", listener)
+    //     }
+    // }, [scrollState]);
 
     return (
-        <nav className={ scrollState }>
+        // <nav className={ scrollState }>
+        <nav>
             <Link to="/" className="logoTxt">
                 <p>B</p>
             </Link>
@@ -48,10 +49,10 @@ function Nav() {
             </button>
             <ul className="nav-links" id="topNav">
                 <Link to="/"><li>Home</li></Link>
-                <Link to="/about"><li>About</li></Link>
-                <Link to="/resume"><li>Resume</li></Link>
-                <Link to="/works"><li>Works</li></Link>
-                <Link to="/contact"><li>Contact</li></Link>
+                <Link to="/home#about"><li>About</li></Link>
+                <Link to="/home#resume"><li>Resume</li></Link>
+                <Link to="/home#works"><li>Works</li></Link>
+                <Link to="/home#contact"><li>Contact</li></Link>
             </ul>
         </nav >
     );

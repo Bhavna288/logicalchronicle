@@ -1,5 +1,6 @@
-.html {
+.html, .body {
   height: 100%;
+  min-width: 100vw;
 }
 *, ::after, ::before {
     box-sizing: border-box;
@@ -51,11 +52,82 @@
   }
 }
 
+.main-menu {
+    position: fixed;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    -webkit-transform: rotate(
+-90deg
+) translateX(-100%);
+    transform: rotate(
+-90deg
+) translateX(-100%);
+    width: 100vh;
+    height: 100px;
+}
+
+.main-menu .menu .menu-nav {
+    margin: -2px auto 0 auto;
+    height: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+ul {
+    margin-bottom: 0;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+    color: #f21e4e !important;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.nav-link {
+    float: right;
+    height: 100%;
+    line-height: 100px;
+    padding: 0px 15px;
+    text-align: center;
+    color: #454545;
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.main-menu .menu {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+    flex-basis: auto;
+}
+
+
+
 nav {
   display: flex;
   justify-content: space-around;
   color: white;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   width: 100%;
   z-index:  100;
@@ -65,7 +137,7 @@ nav {
   background-color: wheat;
 }
 
-.homepage, .aboutpage, .resumepage {
+.homepage, .aboutpage, .resumepage, .workspage, .contactpage {
   min-height: 90vh;
   margin-top: 10vh;
 }
